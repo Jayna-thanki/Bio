@@ -1,0 +1,80 @@
+<nz-layout>
+  <nz-sider nzCollapsible nzWidth="200px" nzHeight="500px">
+    <div class="logo"></div>
+    <ul nz-menu nzTheme="dark" nzMode="inline">
+      <li nz-menu-item>
+        <span nz-icon nzType="info-circle"></span>
+        <span>Skills</span>
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="info-circle"></span>
+        <span>Employment</span>
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="file"></span>
+        <span>Education</span>
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="file"></span>
+        <span>Interest</span>
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="file"></span>
+        <span>Contact</span>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <app-header></app-header>
+    <nz-content>
+      <nz-card nzHoverable style="width: 250px" [nzCover]="coverTemplate">
+        <nz-card-meta
+          nzTitle="Jayna Thanki"
+          nzDescription="https://www.linkedin.com/in/tjayna06/"
+        ></nz-card-meta>
+        <p>
+          Objective : Dedicated and highly motivated Software Engineer with a
+          strong background in software development, problem-solving, and a
+          passion for creating efficient and innovative solutions. Experience
+          using Angular, JavaScript, Java and other front-end design languages,
+          Developed projects for internal use as well as for clients.
+        </p>
+        <a (click)="showModal()">More </a>
+      </nz-card>
+      <ng-template #coverTemplate>
+        <img
+          alt="example"
+          src="../assets/Profile_Photo.jpg"
+        />
+        
+      </ng-template>
+      <nz-modal
+        [(nzVisible)]="isVisible"
+        nzTitle="Jayna Thanki"
+        (nzOnCancel)="handleCancel()"
+        (nzOnOk)="handleOk()"
+      >
+        <ng-container *nzModalContent>
+          <p>
+            I am a results-driven professional with a Master's degree in Project
+            Management who specializes in international project management and
+            risk analysis. I have a strong background in software engineering,a
+            Bachelor's degree in computer science, and about two years of
+            practical experience. Throughout my software engineering career, I
+            have excelled in technologies such as JavaScript, TypeScript,
+            Angular, React, Node, and others. I consistently meet targets and
+            complete tasks on schedule. I've also successfully managed teams of
+            up to five people, promoting teamwork and assuring project success.
+            My ability to establish solid relationships with stakeholders has
+            been critical in project delivery. In addition to my technical
+            expertise, I provide flexible abilities such as problem-solving,
+            analytical thinking, and leadership. I am actively exploring
+            opportunities to successfully apply my knowledge and abilities.
+            Let's connect and talk about how I can help your team succeed.
+          </p>
+        </ng-container>
+      </nz-modal>
+    </nz-content>
+    <app-footer></app-footer>
+  </nz-layout>
+</nz-layout>

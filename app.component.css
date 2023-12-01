@@ -1,0 +1,30 @@
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  background-image: url(https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png);
+}
+
+nz-breadcrumb {
+  margin: 16px 0;
+}
+
+.inner-content {
+  padding: 24px;
+  background: #fff;
+  min-height: 360px;
+}
+.details{
+  margin: 20px;
+  padding: 5px;
+  background: #678;
+  text-align: center;
+}
+nz-card{
+  margin-left: 40%;
+  margin-top: 5%;
+  text-align: justify;
+}
+p{
+  text-align: justify;
+}
